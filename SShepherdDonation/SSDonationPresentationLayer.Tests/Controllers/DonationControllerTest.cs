@@ -67,7 +67,7 @@ namespace SSDonationPresentation.Controllers.Tests
             var donationVMResult = result.ViewData.Model as DonationVM;
 
             Assert.AreEqual("Index", result.ViewName);
-            Assert.AreEqual("Please enter the CardDetails", donationVMResult.ResultResponseVM.ValidationErrors[0]);
+            Assert.AreEqual("Please enter the Card Details", donationVMResult.ResultResponseVM.ValidationErrors[0]);
         }
 
         [TestMethod()]
