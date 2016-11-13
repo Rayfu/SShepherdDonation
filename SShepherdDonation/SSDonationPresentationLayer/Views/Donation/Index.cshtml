@@ -1,0 +1,89 @@
+﻿@model SSDonationPresentation.Models.DonationVM
+
+@{
+    ViewBag.Title = "Donation";
+    var listItems = new List<System.Web.UI.WebControls.ListItem> {
+        new System.Web.UI.WebControls.ListItem { Text = "$1", Value = "1" },
+        new System.Web.UI.WebControls.ListItem { Text = "$5", Value = "5" },
+        new System.Web.UI.WebControls.ListItem { Text = "$10", Value = "10" },
+        new System.Web.UI.WebControls.ListItem { Text = "$15", Value = "15" },
+        new System.Web.UI.WebControls.ListItem { Text = "$20", Value = "20" }
+    };
+}
+
+<br />
+<div class="container">
+    @using (Html.BeginForm("Process", "Donation", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <div class="row centered">
+            <div class="col-md-6">
+                <div class="header">
+                    Basic Details
+                </div>
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { placeholder = "First Name", @class = "form-control input-small" } })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { placeholder = "Last Name", @class = "form-control input-small" } })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { placeholder = "Email", @class = "form-control input-small" } })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Phone, htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { placeholder = "Phone", @class = "form-control input-small" } })
+                            @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.TotalAmount, "Amount", htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="col-md-9">
+                            @Html.DropDownListFor(model => model.TotalAmount, new SelectList(listItems, "Value", "Text"), null, new { @class = "form-control input-small" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-3 col-md-9">
+                            <input id="ProcessTransaction" type="submit" value="Donate Now" class="btn btnDonate" />
+                        </div>
+                    </div>
+
+                    <div>
+                        @Html.HiddenFor(model => model.SecuredCardData, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                </div>
+            </div>
+            <div id="securedFields" class="col-md-6">
+                <div class="header">
+                    Card Details
+                </div>
+                @Html.Partial("_SecuredFields")
+            </div>
+        </div>
+        <div id="resultResponse" class="row centered">
+            <div class="col-md-6">
+                @if (Model != null && Model.ResultResponseVM != null)
+                {
+                    @Html.Partial("_ResultResponse", Model.ResultResponseVM)
+                }
+            </div>
+        </div>
+    }
+</div>

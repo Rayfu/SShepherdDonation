@@ -1,0 +1,89 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.secureFieldDiv {
+    height: 40px;
+}
+
+#eway-secure-name-field, #eway-secure-card-field, #eway-secure-expiry-field, #eway-secure-cvn-field {
+    width: 300px !important;
+}
+
+.col-md-6 {
+    width: 45%;
+}
+
+.form-group {
+    height: 30px;
+}
+
+.form-control {
+    height: 28px;
+    width: 300px;
+}
+
+.form-horizontal .control-label {
+    padding-top: 5px;
+}
+
+.container {
+    display: block;
+}
+
+.centered {
+    text-align: center;
+    font-size: 0;
+}
+
+    .centered > div {
+        float: none;
+        display: inline-block;
+        text-align: left;
+        font-size: 13px;
+    }
+
+.header {
+    margin-top: 10px;
+    background-color: #009371;
+    color: white;
+    display: block;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.validationErrorsDiaplay {
+    background-color: #CCC;
+    font: #ffffff;
+    font-weight: bold;
+}
+
+.totalAmountDiaplay {
+    font-weight: bold;
+}
+
+.btnDonate {
+    background-color: #009371;
+    color: white;
+    font-weight: bold;
+}

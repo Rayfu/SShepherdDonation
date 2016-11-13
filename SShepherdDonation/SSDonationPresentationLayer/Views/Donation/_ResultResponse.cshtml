@@ -1,0 +1,92 @@
+﻿@model SSDonationPresentationLayer.Models.ResultResponseVM
+
+<div>
+    <div class="header">
+        Thank You For Your Donation
+    </div>
+    <dl class="dl-horizontal">
+
+        @if (Model.ValidationErrors.Count() > 0)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.ValidationErrors)
+            </dt>
+        }
+
+        @foreach (var error in Model.ValidationErrors)
+        {
+            <dd class="validationErrorsDiaplay">
+                @error.ToString();
+            </dd>
+        }
+
+        @if (Model != null && !string.IsNullOrEmpty(Model.InternalError))
+        {
+            <dt>
+                InternalError
+            </dt>
+        }
+
+        <dd>
+            @Html.DisplayFor(model => model.InternalError)
+        </dd>
+
+        @if (Model != null && !string.IsNullOrEmpty(Model.EWayReturnedErrors))
+        {
+            <dt>
+                eWayReturnedErrors
+            </dt>
+        }
+
+        <dd>
+            @Html.DisplayFor(model => model.EWayReturnedErrors)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalAmount)
+        </dt>
+
+        @{
+            if (Model != null && Model.TransactionStatus.HasValue && Model.TransactionStatus == true)
+            {
+                <dd class="totalAmountDiaplay">
+                    AUD  &nbsp @Html.DisplayFor(model => model.TotalAmount)
+                </dd>
+            }
+            else
+            {
+                <dd class="totalAmountDiaplay">
+                    AUD $0.00
+                </dd>
+            }
+        }
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionID)
+        </dt>
+
+        <dd>
+            @if (Model != null && Model.TransactionID > 0)
+            {
+                @Html.DisplayFor(model => model.TransactionID)
+            }
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionStatus)
+        </dt>
+
+        <dd>
+            @{
+                if (Model != null && Model.TransactionStatus.HasValue && Model.TransactionStatus == true)
+                {
+                    @:<span class="label label-success">Success</span>
+               }
+                else
+                {
+                    @:<span class="label label-warning">Failure</span>
+               }
+            }
+        </dd>
+    </dl>
+</div>
