@@ -1,0 +1,16 @@
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLL\bin\Debug\AutoMapper.Net4.dll
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLL\bin\Debug\SSDonationBLL.dll.config
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLL\bin\Debug\SSDonationBLL.dll
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLL\bin\Debug\SSDonationBLL.pdb
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLL\bin\Debug\AutoMapper.dll
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLL\bin\Debug\eWAY.Rapid.dll
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLL\bin\Debug\AutoMapper.pdb
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLL\bin\Debug\AutoMapper.xml
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLL\bin\Debug\AutoMapper.Net4.pdb
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLL\bin\Debug\eWAY.Rapid.pdb
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLL\bin\Debug\eWAY.Rapid.xml
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLL\bin\Debug\en\eWAY.Rapid.resources.dll
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLL\obj\Debug\SSDonationBLL.csprojResolveAssemblyReference.cache
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLL\obj\Debug\SSDonationBLL.dll
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLL\obj\Debug\SSDonationBLL.pdb

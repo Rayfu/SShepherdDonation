@@ -1,0 +1,9 @@
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLLTests\bin\Debug\SSDonationBLLTests.dll.config
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLLTests\bin\Debug\SSDonationBLLTests.dll
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLLTests\bin\Debug\SSDonationBLLTests.pdb
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLLTests\bin\Debug\SSDonationBLL.dll
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLLTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLLTests\bin\Debug\SSDonationBLL.pdb
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLLTests\obj\Debug\SSDonationBLLTests.csprojResolveAssemblyReference.cache
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLLTests\obj\Debug\SSDonationBLLTests.dll
+C:\Users\Ray\Documents\GitHub\SShepherdDonation\SShepherdDonation\SSDonationBLLTests\obj\Debug\SSDonationBLLTests.pdb
